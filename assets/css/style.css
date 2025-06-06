@@ -1,0 +1,201 @@
+.lbp-booking-form {
+    max-width: 400px;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lbp-booking-form label {
+    font-weight: 600;
+}
+
+.lbp-booking-form input[type="text"],
+.lbp-booking-form input[type="tel"],
+.lbp-booking-form input[type="email"] {
+    padding: 8px;
+    font-size: 1em;
+}
+
+.lbp-booking-form input[type="submit"] {
+    background: #0073aa;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.lbp-booking-form input[type="submit"]:hover {
+    background: #005177;
+}
+
+.lbp-booking-summary {
+    max-width: 400px;
+    margin: 1em auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+
+/** Form Search Styling **/
+
+#lot-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+}
+
+#lot-form .form-group {
+  width: 100%;
+}
+
+#lot-form .form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+#lot-form .form-group select,
+#lot-form .form-group input[type="date"],
+#lot-form .form-group input[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Use Elementor's global accent color for the submit button */
+#lot-form .form-group.full-width input[type="submit"] {
+  background-color: var(--e-global-color-accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  border: none;
+}
+
+#lot-form .form-group.full-width input[type="submit"]:hover {
+  filter: brightness(93%);
+}
+
+@media (min-width: 600px) {
+  #lot-form .form-group {
+    width: calc(33.333% - 1rem);
+  }
+
+  #lot-form .form-group.full-width {
+    width: 100%;
+  }
+}
+
+/** lot search result **/
+.lot-result {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lot-result h4 {
+  margin: 0;
+}
+
+.lot-result .lot-title a,
+.lot-result .book-now {
+  color: var(--e-global-color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lot-result .book-now {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--e-global-color-accent);
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.lot-result .book-now:hover {
+  filter: brightness(93%);
+}
+
+/* Optional: Make text more legible on small screens */
+@media (max-width: 480px) {
+  .lot-result {
+    font-size: 0.95rem;
+  }
+
+  .lot-result .book-now {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Calendar Filters */
+.filter-select {
+    padding: 5px;
+    margin-right: 10px;
+    min-width: 150px;
+}
+
+#filter-checkin,
+#filter-checkout {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Calendar Container */
+#lbp-booking-calendar {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure full width in admin */
+#lbp-booking-calendar .fc {
+    max-width: 100%;
+}
+
+/* Title area spacing */
+.wrap > h1 {
+    margin-bottom: 20px;
+}
+
+/* Adjust event color (optional) */
+.fc-event {
+    background-color: #0073aa !important;
+    border: none !important;
+    color: white !important;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+/* .lot-thumbnail-wrapper {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lot-thumbnail {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+} */

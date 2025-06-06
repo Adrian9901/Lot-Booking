@@ -1,0 +1,11 @@
+{
+    "name": "adria/lot-booking",
+    "autoload": {
+        "psr-4": {
+            "Adria\\LotBooking\\": "src/"
+        }
+    },
+    "require": {
+        "yahnis-elsts/plugin-update-checker": "^5.6"
+    }
+}
